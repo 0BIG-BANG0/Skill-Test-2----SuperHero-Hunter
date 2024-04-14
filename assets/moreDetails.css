@@ -1,0 +1,95 @@
+body {
+	background-image: url('images/cover2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#showDetail {
+	display: flex;
+	background-color: rgba(194, 181, 180, 0.3);
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	max-width: 800px;
+}
+
+#showDetail .left {
+	border-radius: 15px;
+	overflow: hidden;
+	margin-right: 30px;
+}
+
+.left img {
+	width: 100%;
+	height: auto;
+}
+
+.right {
+	color: white;
+}
+
+.right h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.right p {
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 1.1rem;
+	line-height: 1.6;
+}
+
+.ratings {
+	display: flex;
+	flex-direction: column;
+}
+
+.ratings p {
+	margin: 5px 0;
+	font-size: 1.1rem;
+	line-height: 1.6;
+	font-weight: 900;
+	color: darkgoldenrod;
+}
+
+.ratings p span {
+	display: inline-block;
+	width: 120px;
+	text-align: right;
+	margin-right: 10px;
+	font-weight: bolder;
+}
+
+#underline {
+	border-bottom: 1px solid white;
+	margin-bottom: 20px;
+}
+
+.btn {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+}
+
+.btn.fav {
+	background-color: #28a745;
+	color: white;
+	transition: background-color 0.3s;
+}
+
+.btn.fav:hover {
+	background-color: #218838;
+}
