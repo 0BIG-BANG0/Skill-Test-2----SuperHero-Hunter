@@ -7,7 +7,7 @@ An application use Marvels superhero APIs and show all superhero add to favourit
 
 ## Host :
 
-### Its hosted on github with this link : 
+### Its hosted on github with this link : https://github.com/0BIG-BANG0/Skill-Test-2----SuperHero-Hunter.git
 ### We make it responsive for mobile view also.
 
 ## Technology
