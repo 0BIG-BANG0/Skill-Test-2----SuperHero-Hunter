@@ -1,4 +1,3 @@
-
 # Superhero Hunter
 Welcome to Superhero Hunter, your ultimate destination for exploring the Marvel universe! Developed by Abdus Samad, this application utilizes Marvel's superhero APIs to provide you with an immersive experience like never before. Whether you're a die-hard fan or just starting your journey into the world of superheroes, Superhero Hunter has something for everyone.
 
@@ -9,7 +8,8 @@ Remove from Favorites: Change your mind about a superhero? No problem! Superhero
 Search Functionality: Looking for a specific hero? Use the search field to quickly find your desired character. Superhero Hunter provides a seamless search experience, allowing you to access hero details in no time.
 Responsive Design: Whether you're using a desktop, tablet, or smartphone, Superhero Hunter is optimized for all devices. Enjoy the same immersive experience on any screen size.
 Host
-Superhero Hunter is proudly hosted on GitHub, ensuring accessibility and reliability for users worldwide. Visit the following link to explore the application: Superhero Hunter on GitHub
+Superhero Hunter is proudly hosted on GitHub, ensuring accessibility and reliability for users worldwide. Visit the following link to explore the application: [Superhero Hunter on GitHub]  https://github.com/0BIG-BANG0/Skill-Test-2----SuperHero-Hunter.git
+
 
 # Technology Stack
 Frontend: HTML, CSS, Vanilla JavaScript
