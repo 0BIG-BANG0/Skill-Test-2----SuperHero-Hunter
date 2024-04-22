@@ -8,9 +8,9 @@ body{
 }
 	
 .logo::first-letter{
-	color: grey;
+	color: rgb(117, 133, 117);
 	font-weight: bolder;
-	color: cyan;
+	color: orangered;
 }
 
 .thumbnail{
@@ -40,7 +40,7 @@ body{
 .content h1{
 	font-family: 'Berkshire Swash', cursive;
 	font-size: 8rem;	
-	text-shadow: 2px 2px black;
+	text-shadow: 2px 2px goldenrod;
 }
 .content h2{
 	font-family: 'Dancing Script', cursive;
@@ -76,6 +76,7 @@ body{
 	top: 59%;
 	left: 19.5%;
 	padding: 5px 20px;
+	z-index: 5;
 	
 }
 
