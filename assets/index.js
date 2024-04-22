@@ -134,35 +134,33 @@ function loadEventListner() {
 }
 
 
-function handlerSearch (e) {
-	
-	
-	//this remove the whitespace from start and end
-	let name = e.target.value.trim();
-	
-	if(name !== ""){
-		fetch(`${url}/search/${name}`)
-		.then(res => res.json())
-		.then( (data) => {
-			if(data.response === 'success'){
-				searchResultCont.innerHTML = ''
-				let heroes = data.results
-				// console.log("This ",heroes)	
-				for( hero  of heroes ){
-					let li = document.createElement('li');
-					let a = document.createElement('a')
-					a.innerHTML = hero.name;
-					a.setAttribute('id', hero.id);
-					a.setAttribute('href',`assets/moreDetails.html?id=${hero.id}`)
-					a.classList.add('item');
-					li.appendChild(a);
-					searchResultCont.appendChild(li);
-				}
-			}
-			
-		} )
-	}
-	else{
-		searchResultCont.innerHTML = ''
-	}
+async function handlerSearch(e) {
+    let name = e.target.value.trim();
+
+    if (name !== "") {
+        try {
+            const response = await fetch(`${url}/search/${name}`);
+            const data = await response.json();
+
+            if (data.response === 'success') {
+                searchResultCont.innerHTML = '';
+                let heroes = data.results;
+
+                for (let hero of heroes) {
+                    let li = document.createElement('li');
+                    let a = document.createElement('a');
+                    a.innerHTML = hero.name;
+                    a.setAttribute('id', hero.id);
+                    a.setAttribute('href', `assets/moreDetails.html?id=${hero.id}`);
+                    a.classList.add('item');
+                    li.appendChild(a);
+                    searchResultCont.appendChild(li);
+                }
+            }
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    } else {
+        searchResultCont.innerHTML = '';
+    }
 }
